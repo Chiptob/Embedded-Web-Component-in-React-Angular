@@ -1,0 +1,9 @@
+<div class="App">
+  <h1>Angular Web-Component Prototype</h1>
+
+  <input placeholder="Enter your search request" [(ngModel)]="search" />
+
+  <div class="search-print">Your search request: {{ search }}</div>
+
+  <search-result [attr.search-attribute]="search"></search-result>
+</div>
